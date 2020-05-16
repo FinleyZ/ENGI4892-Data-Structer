@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Exercise2.dir/template-math.cpp.o CMakeFiles/Exercise2.dir/templates.cpp.o  -o Exercise2 

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise2/template-math.cpp
+iostream
+-
+templates.h
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise2/templates.h
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise2/templates.h
+cassert
+-
+memory
+-
+string
+-
+vector
+-
+
