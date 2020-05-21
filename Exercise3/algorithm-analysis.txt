@@ -1,0 +1,86 @@
+1.Given the following pseudocode for matrix multiplication:
+
+        for i in [0, l):
+            for j in [0, m):
+                sum = 0
+
+                for k in [0, n):
+                    sum += a[i,k] * b[k,j]
+
+                c[i,j] = sum
+
+    a)Count the number of arithmetic operations that will be performed in terms of l, m and n.
+        -the number of arithmetic operations will be l*m*n
+
+    b)What is the run-time complexity if l=m=n?
+        - the run-time complexity will be big-Θ (n*n*n)
+        - which is big-Θ (n^3)
+
+    c)Find values of c and n0 to show that the algorithm’s run-time is both O(n^3) and Ω(n^3).
+        - Because algorithm’s run-time is O(n^3), Ω(n^3) and big-Θ (n^3)
+        - thus, c = 1 and n0 = 0;
+
+
+2.Factorial
+
+    a)Write a naïve recursive algorithm for calculating the factorial of an integer. Analyze its time complexity.
+
+            int factorial(int n) {
+                if(n > 1)
+                    return n * factorial(n - 1);
+                else
+                    return 1;
+            }
+
+        - The this recursive algorithm's time complexity is big-Θ (n)
+
+    b)Write an interactive version of the same algorithm and analyze its time complexity. How do they compare?
+        - I am not so sure about what is interactive version of a algorithm is.
+        - I write a function with for loop in my factorial algorithm:
+
+            int factorial (int number){
+                int fact = 1;
+                for(int i=1;i<=number;i++){
+                      fact=fact*i;
+                }
+                return fact;
+            }
+
+        - The this algorithm's time complexity is big-Θ (n)
+        - They have same time complexity with big-Θ (n)
+
+
+
+    c)Implement both version of your algorithm in C++ and time their executions. How do they compare?
+        -OutPut:
+
+            Recursive: Calculated 5! = 120 in 842 ns
+            Iterative: Calculated 5! = 120 in 268 ns
+
+            Recursive: Calculated 8! = 40320 in 864 ns
+            Iterative: Calculated 8! = 40320 in 293 ns
+
+            Recursive: Calculated 10! = 3628800 in 833 ns
+            Iterative: Calculated 10! = 3628800 in 297 ns
+
+            Recursive: Calculated 15! = 1307674368000 in 926 ns
+            Iterative: Calculated 15! = 1307674368000 in 323 ns
+
+            Recursive: Calculated 20! = 2432902008176640000 in 959 ns
+            Iterative: Calculated 20! = 2432902008176640000 in 263 ns
+
+            Recursive: Calculated 30! = -8764578968847253504 in 1102 ns
+            Iterative: Calculated 30! = -8764578968847253504 in 363 ns
+
+            Recursive: Calculated 100! = 0 in 2003 ns
+            Iterative: Calculated 100! = 0 in 661 ns
+
+         -Iterative algorithm for calculating the factorial is around 3 time faster Recursive Iterative
+
+
+
+
+
+
+
+

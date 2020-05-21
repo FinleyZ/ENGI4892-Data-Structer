@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56f0d452-e61a-435e-9db9-b202bf028137" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Exercise/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Exercise/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symbol-names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/symbol-names.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,7 @@
       <workItem from="1589631658687" duration="304000" />
       <workItem from="1589632012750" duration="15715000" />
       <workItem from="1589661410810" duration="9000" />
+      <workItem from="1590065193191" duration="7000" />
     </task>
     <servers />
   </component>
@@ -113,5 +113,9 @@
     </state>
     <state width="1398" height="217" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1589648419394" />
     <state width="1398" height="217" key="GridCell.Tab.0.right/1440.-101.1366.1001/0.23.1440.836@0.23.1440.836" timestamp="1589661407708" />
+    <state x="397" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1590065198279">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state x="397" y="273" key="com.intellij.ide.util.TipDialog/0.23.1440.836@0.23.1440.836" timestamp="1590065198279" />
   </component>
 </project>

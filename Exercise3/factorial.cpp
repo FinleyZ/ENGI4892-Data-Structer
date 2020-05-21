@@ -21,21 +21,28 @@ long recursive(int n);
 long iterative(int n);
 
 
+//argv vector contain the string value by user entered on the commend line
+//argc is the number of strings pointed to by argv vector
 int main(int argc, char *argv[])
 {
+    //if only entered an executable file in the commend line, return 1.
 	if (argc < 2)
 	{
-		cerr << "Usage:  " << argv[0] << " <n>\n";
-		return 1;
+		cerr << "Usage:  " << argv[0] << " <n>\n"; //standard error stream
+        return 1;
 	}
 
+    //Parses the string argv[1] interpreting its content as an integral number of base 10
+    //And assign this value to int n
 	char *end;
+
 	int n = strtol(argv[1], &end, 10);
-	if (*end != '\0')
-	{
-		cerr << "Invalid value of n: '" << argv[1] << "'\n";
-		return 1;
-	}
+	if (*end != '\0')//if argv[1] contain a character
+    {
+        cerr << "Invalid value of n: '" << argv[1] << "'\n";
+        return 1;
+    }
+
 
 	cout << "Recursive: ";
 	timeFactorialFunction(recursive, n);
@@ -57,4 +64,21 @@ void timeFactorialFunction(std::function<long (int)> f, int n)
 
 	cout << "Calculated " << n << "! = " << result
 		<< " in " << (end - start).count() << " ns\n";
+}
+
+
+long recursive(int n){
+    if(n > 1)
+        return n * recursive(n - 1);
+    else
+        return 1;
+}
+
+
+long iterative(int n){
+    long fact = 1;
+    for(int i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    return fact;
 }
