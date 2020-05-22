@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <functional>
 #include <iostream>
+#include "bubbleSortTemplate.cpp"
 using namespace std;
 
 
@@ -19,6 +20,10 @@ long recursive(int n);
 
 //! Calculate the factorial of a number, iteratively.
 long iterative(int n);
+
+//! A template Sort number from small to big in order;
+template <typename T>
+T bubbleSort(T array[]);
 
 
 //argv vector contain the string value by user entered on the commend line
@@ -44,11 +49,15 @@ int main(int argc, char *argv[])
     }
 
 
+
+//test time taken by recursive function
 	cout << "Recursive: ";
 	timeFactorialFunction(recursive, n);
 
+//test time taken by recursive function
 	cout << "Iterative: ";
 	timeFactorialFunction(iterative, n);
+
 
 	return 0;
 }
@@ -82,3 +91,7 @@ long iterative(int n){
     }
     return fact;
 }
+
+template <typename T>
+T bubbleSort(T array[]);
+

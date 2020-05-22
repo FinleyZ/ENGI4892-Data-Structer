@@ -1,3 +1,6 @@
+*************************************************************************************
+Exercises for 20 May 2020
+
 1.Given the following pseudocode for matrix multiplication:
 
         for i in [0, l):
@@ -76,6 +79,47 @@
             Iterative: Calculated 100! = 0 in 661 ns
 
          -Iterative algorithm for calculating the factorial is around 3 time faster Recursive Iterative
+
+
+*************************************************************************************
+Exercise for 22 May 2020:
+
+1.Bubble sort complexity:
+    a)Sketch the algorithm for the bubble sort of an array in pseudocode.
+
+           for i in [0, arraySize):
+              swapped = false
+
+              for j in [0, arraySize):
+
+                 //compare the adjacent elements
+                 if array[j] > array[j+1] then
+                    /* swap them */
+                    temp = *array[j]
+                    *array[j] = *array[i]
+                    *array[i] = *temp
+
+                    swap( array[j], array[j+1] )
+                    swapped = true
+
+              //if no number was swapped that means array is sorted now, break the loop.
+
+              if(swapped = false) then
+                 break
+
+    b) Analyze your algorithm’s run-time complexity in terms of n, the number of items in the array.
+        -The ron-time complexity of bubble sort algorithm is big-Θ (n^3).
+
+
+2.Bubble sort implementation
+    a)Implement your bubble-sort algorithm as a C++ function template.
+        - see bubbleSortTemplate.cpp file
+
+
+
+
+    b)Measure and plot its run time for varying data sizes. You may find the C standard library’s rand() function helpful when generating data[2].
+
 
 
 

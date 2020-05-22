@@ -4,4 +4,4 @@ project(Exercise3)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Exercise3
-        factorial.cpp)
+        factorial.cpp bubbleSortTemplate.cpp)

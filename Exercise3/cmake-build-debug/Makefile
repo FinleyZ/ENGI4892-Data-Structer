@@ -123,6 +123,33 @@ Exercise3/fast:
 	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/build
 .PHONY : Exercise3/fast
 
+bubbleSortTemplate.o: bubbleSortTemplate.cpp.o
+
+.PHONY : bubbleSortTemplate.o
+
+# target to build an object file
+bubbleSortTemplate.cpp.o:
+	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/bubbleSortTemplate.cpp.o
+.PHONY : bubbleSortTemplate.cpp.o
+
+bubbleSortTemplate.i: bubbleSortTemplate.cpp.i
+
+.PHONY : bubbleSortTemplate.i
+
+# target to preprocess a source file
+bubbleSortTemplate.cpp.i:
+	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/bubbleSortTemplate.cpp.i
+.PHONY : bubbleSortTemplate.cpp.i
+
+bubbleSortTemplate.s: bubbleSortTemplate.cpp.s
+
+.PHONY : bubbleSortTemplate.s
+
+# target to generate assembly for a file
+bubbleSortTemplate.cpp.s:
+	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/bubbleSortTemplate.cpp.s
+.PHONY : bubbleSortTemplate.cpp.s
+
 factorial.o: factorial.cpp.o
 
 .PHONY : factorial.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Exercise3"
+	@echo "... bubbleSortTemplate.o"
+	@echo "... bubbleSortTemplate.i"
+	@echo "... bubbleSortTemplate.s"
 	@echo "... factorial.o"
 	@echo "... factorial.i"
 	@echo "... factorial.s"

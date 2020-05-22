@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/bubbleSortTemplate.cpp">
+			<Option target="Exercise3"/>
+		</Unit>
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/factorial.cpp">
 			<Option target="Exercise3"/>
 		</Unit>
