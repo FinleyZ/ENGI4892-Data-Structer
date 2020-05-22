@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/bubbleSortTemplate.cpp
+iostream
+-
+
 /Users/hongfeizhang/Programming/ENGI-3894/Exercise3/factorial.cpp
 chrono
 -
@@ -15,4 +19,6 @@ functional
 -
 iostream
 -
+bubbleSortTemplate.cpp
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/bubbleSortTemplate.cpp
 

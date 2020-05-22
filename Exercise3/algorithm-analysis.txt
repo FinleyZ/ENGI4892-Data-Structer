@@ -94,10 +94,10 @@ Exercise for 22 May 2020:
 
                  //compare the adjacent elements
                  if array[j] > array[j+1] then
-                    /* swap them */
-                    temp = *array[j]
-                    *array[j] = *array[i]
-                    *array[i] = *temp
+                    // swap them
+                    temp = array[j]
+                    array[j] = array[i]
+                    array[i] = temp
 
                     swap( array[j], array[j+1] )
                     swapped = true

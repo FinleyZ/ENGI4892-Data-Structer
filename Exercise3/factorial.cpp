@@ -23,7 +23,11 @@ long iterative(int n);
 
 //! A template Sort number from small to big in order;
 template <typename T>
-T bubbleSort(T array[]);
+void bubbleSort(T array[]);
+
+//!print all numbers in an array
+template <typename T>
+void printArray(T array, int arraySize);
 
 
 //argv vector contain the string value by user entered on the commend line
@@ -48,15 +52,40 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    //Create an array with random number
+	int array_Size = strtol(argv[2], &end, 10);;
+	int array[array_Size];
 
+    for (int i = 0; i < array_Size; ++i) {
+        array[i] = rand() % 100;
+    }
+
+    cout << "My array is: ";
+    printArray(array,array_Size);
+
+    //test time taken by bubbleSort function
+    cout<< "bubbleSort: ";
+
+    auto startFunction  = chrono::high_resolution_clock::now();
+    bubbleSort(array,array_Size);
+    auto endFunction = chrono::high_resolution_clock::now();
+
+    cout<< "Bubble sorted array with size: "<< array_Size
+    <<", in " << (endFunction - startFunction).count() << " ns\n";
+
+    cout<< "The sorted array is: ";
+    printArray(array,array_Size);
+    cout<<"\n";
 
 //test time taken by recursive function
 	cout << "Recursive: ";
 	timeFactorialFunction(recursive, n);
+    cout<<"\n";
 
 //test time taken by recursive function
 	cout << "Iterative: ";
 	timeFactorialFunction(iterative, n);
+    cout<<"\n";
 
 
 	return 0;
@@ -93,5 +122,9 @@ long iterative(int n){
 }
 
 template <typename T>
-T bubbleSort(T array[]);
-
+void printArray(T array, int arraySize){
+    for (int i = 0; i < arraySize; ++i) {
+        cout<<array[i]<<" ";
+    }
+    cout<<"\n";
+}
