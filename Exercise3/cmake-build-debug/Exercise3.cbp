@@ -84,6 +84,9 @@
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/factorial.cpp">
 			<Option target="Exercise3"/>
 		</Unit>
+		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/mean.cpp">
+			<Option target="Exercise3"/>
+		</Unit>
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -177,6 +177,33 @@ factorial.cpp.s:
 	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/factorial.cpp.s
 .PHONY : factorial.cpp.s
 
+mean.o: mean.cpp.o
+
+.PHONY : mean.o
+
+# target to build an object file
+mean.cpp.o:
+	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/mean.cpp.o
+.PHONY : mean.cpp.o
+
+mean.i: mean.cpp.i
+
+.PHONY : mean.i
+
+# target to preprocess a source file
+mean.cpp.i:
+	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/mean.cpp.i
+.PHONY : mean.cpp.i
+
+mean.s: mean.cpp.s
+
+.PHONY : mean.s
+
+# target to generate assembly for a file
+mean.cpp.s:
+	$(MAKE) -f CMakeFiles/Exercise3.dir/build.make CMakeFiles/Exercise3.dir/mean.cpp.s
+.PHONY : mean.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... factorial.o"
 	@echo "... factorial.i"
 	@echo "... factorial.s"
+	@echo "... mean.o"
+	@echo "... mean.i"
+	@echo "... mean.s"
 .PHONY : help
 
 

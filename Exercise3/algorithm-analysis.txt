@@ -120,6 +120,32 @@ Exercise for 22 May 2020:
 
     b)Measure and plot its run time for varying data sizes. You may find the C standard library’s rand() function helpful when generating data[2].
 
+    	output:
+
+    	My array is: 7 49 73 58 30 72 44 78 23 9
+        bubbleSort: Bubble sorted array with size: 10, in 788 ns
+        The sorted array is: 7 9 23 30 44 49 58 72 73 78
+
+        bubbleSort: Bubble sorted array with size: 20, in 3908 ns
+
+        bubbleSort: Bubble sorted array with size: 50, in 16206 ns
+
+        bubbleSort: Bubble sorted array with size: 100, in 54299 ns
+
+        bubbleSort: Bubble sorted array with size: 200, in 242188 ns
+
+        bubbleSort: Bubble sorted array with size: 300, in 524178 ns
+
+        bubbleSort: Bubble sorted array with size: 500, in 1396479 ns
+
+        bubbleSort: Bubble sorted array with size: 700, in 2678800 ns
+
+        bubbleSort: Bubble sorted array with size: 900, in 4813571 ns
+
+        bubbleSort: Bubble sorted array with size: 1200, in 7367647 ns
+
+
+
 
 
 

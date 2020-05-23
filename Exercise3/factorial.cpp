@@ -77,12 +77,12 @@ int main(int argc, char *argv[])
     printArray(array,array_Size);
     cout<<"\n";
 
-//test time taken by recursive function
+    //test time taken by recursive function
 	cout << "Recursive: ";
 	timeFactorialFunction(recursive, n);
     cout<<"\n";
 
-//test time taken by recursive function
+    //test time taken by recursive function
 	cout << "Iterative: ";
 	timeFactorialFunction(iterative, n);
     cout<<"\n";
