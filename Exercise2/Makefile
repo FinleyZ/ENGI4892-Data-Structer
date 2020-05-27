@@ -1,4 +1,4 @@
-CXXFLAGS=	-std=c++11 -Wall
+ CXXFLAGS=	-std=c++11 -Wall
 SRCS=		templates.cpp template-math.cpp
 OBJS=		${SRCS:.cpp=.o}
 

@@ -12,7 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56f0d452-e61a-435e-9db9-b202bf028137" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/symbol-names.txt" beforeDir="false" afterPath="$PROJECT_DIR$/symbol-names.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-math.o" beforeDir="false" afterPath="$PROJECT_DIR$/template-math.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-test" beforeDir="false" afterPath="$PROJECT_DIR$/template-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/algorithm-analysis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/algorithm-analysis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/Exercise3.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/Exercise3.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exercise3/factorial.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Exercise3/factorial.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +98,9 @@
       <workItem from="1589632012750" duration="15715000" />
       <workItem from="1589661410810" duration="9000" />
       <workItem from="1590065193191" duration="7000" />
+      <workItem from="1590173566227" duration="40000" />
+      <workItem from="1590175548215" duration="82000" />
+      <workItem from="1590175969321" duration="9000" />
     </task>
     <servers />
   </component>
