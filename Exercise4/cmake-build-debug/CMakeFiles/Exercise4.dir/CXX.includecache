@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise4/sorting.cpp
+functional
+-
+iostream
+-
+string
+-
+vector
+-
+sorting.h
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise4/sorting.h
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise4/sorting.h
+

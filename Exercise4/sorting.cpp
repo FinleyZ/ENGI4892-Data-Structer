@@ -45,7 +45,7 @@ int main()
 
 	cout << "Sorted: " << numbers << "\n";
 
-	vector<string> names = { "Alice", "Joe", "Eve", "Bob" };
+	vector<string> names = { "Alice", "Joe", "Eve", "Bob"};
 	insertionSort(names.begin(), names.end(), std::less<string>());
 
 	cout << "Sorted: " << names << "\n";

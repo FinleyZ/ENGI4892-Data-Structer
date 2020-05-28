@@ -14,6 +14,14 @@
  * limitations under the License.
  */
 
+template<typename T>
+static void swap(T &x, T &y)
+{
+    T tmp = x;
+    x = y;
+    y = tmp;
+}
+
 template<typename Iter, typename Comparator>
 void bubbleSort(const Iter& begin, const Iter& end, Comparator compareFn)
 {
@@ -22,5 +30,21 @@ void bubbleSort(const Iter& begin, const Iter& end, Comparator compareFn)
 template<typename Iter, typename Comparator>
 void insertionSort(const Iter& begin, const Iter& end, Comparator compareFn)
 {
+//    auto lastSortedNum = begin;
+    for (auto unSortedNum = begin+1; unSortedNum  < end; ++unSortedNum )
+    {
+        auto currentSortNum = unSortedNum;
+        for (auto sortedNum = unSortedNum-1; sortedNum >= begin; --sortedNum)
+        {
+            if(compareFn(*currentSortNum, *sortedNum))
+            {
+                swap(*sortedNum, *unSortedNum);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
 }
 
