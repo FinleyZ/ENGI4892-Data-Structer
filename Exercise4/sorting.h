@@ -33,10 +33,12 @@ void insertionSort(const Iter& begin, const Iter& end, Comparator compareFn)
 //    auto lastSortedNum = begin;
     for (auto unSortedNum = begin+1; unSortedNum  < end; ++unSortedNum )
     {
-        auto currentSortNum = unSortedNum;
+//        auto currentSortNum = unSortedNum;
+        std::cout<<"currently sorting: "<<*unSortedNum<<"\n";
         for (auto sortedNum = unSortedNum-1; sortedNum >= begin; --sortedNum)
         {
-            if(compareFn(*currentSortNum, *sortedNum))
+            std::cout<<"currently sorting1: "<<*unSortedNum<<"\n";
+            if(compareFn(*unSortedNum, *sortedNum))
             {
                 swap(*sortedNum, *unSortedNum);
             }
