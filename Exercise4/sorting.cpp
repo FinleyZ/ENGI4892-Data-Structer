@@ -18,6 +18,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <iterator>
+#include <cmath>
 
 #include "sorting.h"
 
@@ -40,7 +42,7 @@ ostream& operator << (ostream& o, const vector<T>& v)
 
 int main()
 {
-	vector<int> numbers = { 1, 8, 4, 2, 9 };
+	vector<int> numbers = { 1, 8, 4, 2, 9, 3, 1};
 	insertionSort(numbers.begin(), numbers.end(), std::less<int>());
 
 	cout << "Sorted: " << numbers << "\n";
@@ -50,7 +52,17 @@ int main()
 
 	cout << "Sorted: " << names << "\n";
 
-	vector<unique_ptr<string>> uniqueNames;
+    int bigNumbers[6] = {9981,6621,1998,1997,7766,3421};
+    radixSort(bigNumbers, 6,4);
+
+    for (int i = 0; i < 6 ; ++i) {
+        std::cout<<bigNumbers[i]<<" ";
+    }
+    std::cout<<"\n ";
+
+
+
+    vector<unique_ptr<string>> uniqueNames;
 	uniqueNames.emplace_back(new string("Beorn"));
 	uniqueNames.emplace_back(new string("Aiken"));
 

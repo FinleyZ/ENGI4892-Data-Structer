@@ -1,0 +1,16 @@
+Exercises for 27 May 2019:
+	1.Implement the insertionSort function in sorting.h.
+		-see sorting.h
+
+	2.Analyze the worst-case run-time performance of the merge sort.
+		-   T(n) = n + 2T(n/2)
+		-	after use the recursive definition of the merge sort
+		- 	T(n/2) = n + 4T(n/4)
+		-	....
+		-	T(n) = Nlog2(n) + n
+
+Exercises for 29 May 2019:
+	1.Implement the radix sort for integers using a function template and specialize your template for strings.
+    	-see sorting.h
+    	-for specialize template for strings couldn't figure out how to brake out the string
+
