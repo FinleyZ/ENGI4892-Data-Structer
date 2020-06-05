@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Exercise3.dir/bubbleSortTemplate.cpp.o"
   "CMakeFiles/Exercise3.dir/factorial.cpp.o"
-  "CMakeFiles/Exercise3.dir/mean.cpp.o"
   "Exercise3"
   "Exercise3.pdb"
 )

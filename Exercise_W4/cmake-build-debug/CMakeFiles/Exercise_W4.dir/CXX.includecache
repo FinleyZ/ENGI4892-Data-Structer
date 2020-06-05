@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise_W4/main.cpp
+iostream
+-
+remove.h
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise_W4/remove.h
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise_W4/remove.h
+vector
+-
+list
+-
+iostream
+-
+

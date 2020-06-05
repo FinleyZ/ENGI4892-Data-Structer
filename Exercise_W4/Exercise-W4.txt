@@ -1,0 +1,30 @@
+Exercises for 1 Jun 2020
+	1. Write the pseudocode for an algorithm that will remove all of the numbers from a
+	   list that are multiples of 10. Analyze its asymptotic complexity.
+
+			for iterator = list.begin, i!= lest.end, i++
+				if(*iterator % 10 = 0){
+					erase list position iterator pointed
+				}
+
+			asymptotic complexity is O(n)
+
+	2. Modify the above algorithm to remove the same numbers from a vector instead of a list.
+	   Analyze its asymptotic complexity.
+
+	   		for i = vector.begin, i!= vector.end, i++
+	   			for j = i + 1, i!= vector.end, i++
+            		if(verctor[i] = verctor[j]){
+            			erase vector[j]
+            		}
+
+			asymptotic complexity is O(n^2)
+
+	2. Implement your algorithms using the std::list and std::vector class templates.
+	   Time their execution for varying sizes of lists and vectors to conform your theoretical analysis.
+
+
+
+
+
+

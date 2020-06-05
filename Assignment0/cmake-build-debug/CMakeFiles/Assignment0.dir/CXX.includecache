@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hongfeizhang/Programming/ENGI-3894/Assignment0/Expression.cpp
+iostream
+-
+cmath
+-
+Expression.h
+/Users/hongfeizhang/Programming/ENGI-3894/Assignment0/Expression.h
+memory
+-
+mach_debug/zone_info.h
+-
+
+/Users/hongfeizhang/Programming/ENGI-3894/Assignment0/Expression.h
+memory
+-
+

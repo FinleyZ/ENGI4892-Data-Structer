@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/bubbleSortTemplate.cpp" "/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/bubbleSortTemplate.cpp.o"
   "/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/factorial.cpp" "/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/factorial.cpp.o"
-  "/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/mean.cpp" "/Users/hongfeizhang/Programming/ENGI-3894/Exercise3/cmake-build-debug/CMakeFiles/Exercise3.dir/mean.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
