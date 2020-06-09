@@ -24,7 +24,13 @@ Exercises for 1 Jun 2020
 	   Time their execution for varying sizes of lists and vectors to conform your theoretical analysis.
 
 
+Exercises for 3 Jun 2020
+	1.Write a naïve implementation of a quicksort function template that stores temporary values in
+	  std::list<T> objects, i.e., that constructs a std::list<T> for elements smaller than the pivot,
+	  another for values equal to the pivot and a third for values larger than the pivot.
+	  Use the std::list<T>::splice method to join these lists together after the recursive sorting step.
 
+Exercises for 5 Jun 2020
 
-
+	1.Implement a class that stores double values in a linked list.
 
