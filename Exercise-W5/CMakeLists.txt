@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.15)
-project(untitled)
+project(Exercise_W5)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.cpp)
+include_directories(.)
+
+add_executable(Exercise_W5
+        main.cpp
+        )

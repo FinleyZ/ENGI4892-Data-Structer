@@ -1,0 +1,18 @@
+Exercises for 10 Jun 2020
+
+1. Demonstrate that the stack used to store C++ functions' local variables grows downwards.
+	- Demonstrated in main.cpp file.
+	- the output show below, but not sure local variables grows downwards in stack
+		0x7ffee2acbaa8
+        0x7ffee2acba88
+        0x7ffee2acba68
+        0x7ffee2acba48
+        0x7ffee2acba28
+
+2. The reverse Polish notation (RPN) is a notation for expressing mathematical operations without
+   requiring parentheses. Unlike infix notation (e.g., 1+2), calculations can be done in a single
+   pass through the token stream — no additional parsing is required.Write a function that accepts
+   a pair of iterators over a container of strings (e.g., { "1", "2", "+", "3", "*" }) and that
+   returns an integer derived from an RPN interpretation of the strings (in the example above, 9).
+
+  Shown in PRN_Exercise.cpp

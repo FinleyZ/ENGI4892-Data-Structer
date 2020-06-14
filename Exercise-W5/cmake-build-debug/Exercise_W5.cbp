@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="untitled"/>
+		<Option title="Exercise_W5"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -37,13 +37,14 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="untitled">
-				<Option output="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
+			<Target title="Exercise_W5">
+				<Option output="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Exercise_W5" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/."/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -51,19 +52,20 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise_W5"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="untitled/fast">
-				<Option output="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/untitled" prefix_auto="0" extension_auto="0"/>
+			<Target title="Exercise_W5/fast">
+				<Option output="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Exercise_W5" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/."/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -71,7 +73,7 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 untitled/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exercise_W5/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -79,7 +81,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/main.cpp">
-			<Option target="untitled"/>
+			<Option target="Exercise_W5"/>
 		</Unit>
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
