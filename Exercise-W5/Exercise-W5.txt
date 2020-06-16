@@ -15,4 +15,18 @@ Exercises for 10 Jun 2020
    a pair of iterators over a container of strings (e.g., { "1", "2", "+", "3", "*" }) and that
    returns an integer derived from an RPN interpretation of the strings (in the example above, 9).
 
-  Shown in PRN_Exercise.cpp
+  Shown in main.cpp
+  Unfortunately this code have a lot of error, i not have enourh time to fix it.
+
+
+Exercises for 12 Jun 2020
+
+1.Implement a template queue class using a std::list field.
+  Provide enqueue(), dequeue() and size() methods — no iterators required.
+     Shown in main.cpp
+
+2.Write a C++ program that accepts user input via std::cin and, depending on that input,
+enqueues and dequeues values of type int. For example, you might accept user commands like
+enqueue NUMBER to enqueue a value in your queue and dequeue to dequeue a number and print it out.
+Your program should refuse to dequeue a number when the queue is empty.
+  	Shown in main.cpp
