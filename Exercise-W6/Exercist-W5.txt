@@ -1,0 +1,19 @@
+Exercises for 17 Jun 2020
+
+1.Discuss the merits of using std::shared_ptr vs std::unique_ptr to manage
+  the ownership of child nodes in a tree.
+
+  	- std::shared_ptr
+  	  Several shared_ptr objects may own the same object, which enable to several child node
+  	  point to their parent node in a tree
+
+  	- std::unique_ptr
+  	  Owns and manages another object through a pointer
+  	  and disposes of that object when the unique_ptr goes out of scope.
+  	  Also, child node will only have same parent node.
+
+
+2.Implement a tree ADT (abstract data type) in which each node can have an arbitrary
+  number of children. Implement the following methods to populate your tree.
+  Write test code to build a tree with some pre-defined structure and use a debugger to verify
+  that the tree has the structure you intended.
