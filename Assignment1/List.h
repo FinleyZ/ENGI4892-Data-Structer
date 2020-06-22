@@ -23,6 +23,7 @@ private:
 //    Add whatever you need to add here
 
     class Node{
+    public:
     T value_;
     Node* next_;
     Node* prev_;
@@ -44,7 +45,7 @@ public:
             Data = nullptr;
         }
 
-        iterator(Node other){
+        iterator(Node *other){
             Data = other;
         }
 
@@ -120,8 +121,8 @@ public:
     List(){
         head_ = new Node;
         head_-> prev_= nullptr;
-        head_->next_ = nullptr;
-        head_-> value_ =0;
+        head_-> next_ = nullptr;
+//        head_-> value_ = 0;
         tail_ = head_;
         size_ = 0;
     }
@@ -131,7 +132,7 @@ public:
         head_ = new Node;
         head_-> prev_= nullptr;
         head_-> next_ = nullptr;
-        head_-> value_ =0;
+//        head_-> value_ =0;
         tail_ = head_;
         size_ = 0;
         Node* node = ListCopied.head_->next_;
@@ -145,21 +146,52 @@ public:
     List(List&& ListMoved){
         this->head_ = ListMoved.head_;
         this->tail_ = ListMoved.tail_;
-        this->size_ =ListMoved.size_;
-        ListMoved.head_ = nullptr;
-        ListMoved.tail_ = nullptr;
+        this->size_ = ListMoved.size_;
+        ListMoved.head_ = new Node;
+        ListMoved.head_->next_=NULL;
+        ListMoved.head_->prev_=NULL;
         ListMoved.size_ = 0;
     }
 
     //! Destructor
     ~List(){
+        while(!empty())
+        {
+            iterator it = begin();
+            erase(it);
+        }
+        delete head_;
     }
 
     //! Copy assignment operator
-    List& operator= (const List&);
+    List& operator= (const List& l){
+        head_ = new Node;
+        head_-> prev_= nullptr;
+        head_-> next_ = nullptr;
+        head_-> value_ =0;
+        tail_ = head_;
+        size_ = 0;
+        Node* node = l.head_->next_;
+        while(node!= nullptr) {
+            push_back(node->value_);
+            node = node->next_;
+        }
+        return *this;
+//        return List(l);
+    }
 
     //! Move assignment operator
-    List& operator= (List&&);
+    List& operator= (List&& l){
+        this->head_ = l.head_;
+        this->tail_ = l.tail_;
+        this->size_ = l.size_;
+        l.head_ = new Node;
+        l.head_->next_=NULL;
+        l.head_->prev_=NULL;
+        l.tail_ = l.head_;
+        l.size_ = 0;
+        return *this;
+    }
 
 
     //
@@ -172,23 +204,21 @@ public:
     }
 
     //! Is this list empty?
-    bool empty() const;
+    bool empty() const{
+        return (size_ == 0);
+    }
 
     //! Get an iterator to the beginning of the list
     //------
     iterator begin(){
-        iterator beginIt;
-        beginIt.Data->prev_=head_->prev_;
-        beginIt.Data->next_=head_->next_;
+        iterator beginIt(head_->next_);
         return beginIt;
     }
 
     //! Get an iterator just past the end of the list
     //------
     iterator end(){
-        iterator endIt;
-        endIt.Data->prev_=tail_->prev_;
-        endIt.Data->next_=tail_->next_;
+        iterator endIt(tail_->next_);
         return endIt;
     }
 
@@ -209,12 +239,13 @@ public:
 
     //! Copy an element to the back of the list
     void push_back(const T& value){
+//        T s = value;
         insert(end(),value);
     }
 
     //! Add an element to the back of the list
     void push_back(T&& value){
-        insert(begin(),value);
+        insert(end(),value);
     }
 
     /**
@@ -247,10 +278,7 @@ public:
             tail_ = n;
         }
         size_++;
-
         return iterator(n);
-
-
     }
 
     /**
@@ -263,10 +291,33 @@ public:
      *
      * @returns   an iterator pointing at the newly-inserted element
      */
-    iterator insert(iterator, T&&);
+    iterator insert(iterator it, T&& value){
+        T a = value;
+        return insert(it,a);
+    }
 
     //! Remove an element from an arbitrary location
-    void erase(iterator);
+    void erase(iterator it){
+        if(it != end()){
+            Node *p = it.Data;
+            Node *preN = p->prev_;
+            Node *nextN = p->next_;
+            preN->next_ = nextN;
+            if(p==tail_)
+                tail_ = preN;
+            if(nextN!= nullptr)
+                nextN->prev_=preN;
+            delete p;
+            --size_;
+
+//            it.Data->prev_->next_ = it.Data->next_;
+//            if(*it =tail_){
+//            }
+//            it.Data->next_->prev_ = it.Data->prev_;
+//            it.Data->prev_ = nullptr;
+//            it.Data->next_ = nullptr;
+        }
+    }
 
 //private:
 //    // Add whatever you need to add here
