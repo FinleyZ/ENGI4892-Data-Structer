@@ -10,7 +10,6 @@ private:
     public:
         Node(T v):value_ (std::move(v)){}
 
-        //Add a leaf node to the top level of this tree.
         void addChild(std::unique_ptr<Node> child){
             children_.push_back(std::move(child));
         }

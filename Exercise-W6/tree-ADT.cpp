@@ -6,48 +6,58 @@
 template <typename T>
 class Tree{
 public:
-    Tree(){}
-    Tree(T value) : value_(value){}
+
+    Tree(){
+    }
 
 
 /**
  * Set the value of the tree's root node.
  */
     Tree& setRoot(T value){
-        std::unique_ptr<Tree> node = std::make_unique<Tree>(value);//Why we need have a <Tree> when we call make_unique()
+        std::unique_ptr<Node> node = std::make_unique<Node>(value);
         if (!root_) {
-            root_ = std::move(node);
+            root_  = std::move(node);
         }else{
+            root_->value_ = value;
             std::cout<<"This tree already have a root"<<"\n";
         }
-        //how to return this lvalue ??
-        return node;
+
+        return *this;
     }
 
 /**
  * Add a leaf node to the top level of this tree.
  */
     Tree& addChild(T value){
-        std::unique_ptr<Tree> node = std::make_unique<Tree>(value);
-        children_.push_back(std::move(node));
-        return node;
+        std::unique_ptr<Node> node = std::make_unique<Node>(value);
+        root_->children_.push_back(std::move(node));
+
+//        node->children_.push_back(std::move(node));
+        return *this;
     }
 
 /**
  * Add a subtree to the top level of this tree, using move
  * semantics to "steal" the subtree's nodes.
  */
-    Tree& addSubtree(Tree<T>&&){
-        std::unique_ptr<Tree> node = std::make_unique<Tree>;
-        children_.push_back(std::move(node));
-        return node;
+    Tree& addSubtree(Tree<T>&& subTree){
+        root_->children_.push_back(std::move(subTree.root_));
+        return this;
+
+//        std::unique_ptr<Tree> node = std::make_unique<Tree>;
+//        children_.push_back(std::move(node));
+//        return node;
     }
 
 private:
-
-    T value_;
-    std::vector<std::unique_ptr<Tree>> children_;
-    std::unique_ptr<Tree> root_;
+    class Node{
+    public:
+        Node(T v) : value_(std::move(v)){}
+        T value_;
+        std::vector<std::unique_ptr<Tree>> children_;
+    };
+    std::unique_ptr<Node> root_;
 };
 
 int main(){
@@ -55,5 +65,4 @@ int main(){
     tree.setRoot("Hello Word");
 
     tree.setRoot("Hello Earth");
-
 }
