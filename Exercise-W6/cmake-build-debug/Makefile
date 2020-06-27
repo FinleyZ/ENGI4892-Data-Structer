@@ -150,32 +150,86 @@ Tree.cpp.s:
 	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/Tree.cpp.s
 .PHONY : Tree.cpp.s
 
-tree-ADT.o: tree-ADT.cpp.o
+tree-child.o: tree-child.cpp.o
 
-.PHONY : tree-ADT.o
+.PHONY : tree-child.o
 
 # target to build an object file
-tree-ADT.cpp.o:
-	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o
-.PHONY : tree-ADT.cpp.o
+tree-child.cpp.o:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-child.cpp.o
+.PHONY : tree-child.cpp.o
 
-tree-ADT.i: tree-ADT.cpp.i
+tree-child.i: tree-child.cpp.i
 
-.PHONY : tree-ADT.i
+.PHONY : tree-child.i
 
 # target to preprocess a source file
-tree-ADT.cpp.i:
-	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.i
-.PHONY : tree-ADT.cpp.i
+tree-child.cpp.i:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-child.cpp.i
+.PHONY : tree-child.cpp.i
 
-tree-ADT.s: tree-ADT.cpp.s
+tree-child.s: tree-child.cpp.s
 
-.PHONY : tree-ADT.s
+.PHONY : tree-child.s
 
 # target to generate assembly for a file
-tree-ADT.cpp.s:
-	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.s
-.PHONY : tree-ADT.cpp.s
+tree-child.cpp.s:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-child.cpp.s
+.PHONY : tree-child.cpp.s
+
+tree-sibling.o: tree-sibling.cpp.o
+
+.PHONY : tree-sibling.o
+
+# target to build an object file
+tree-sibling.cpp.o:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o
+.PHONY : tree-sibling.cpp.o
+
+tree-sibling.i: tree-sibling.cpp.i
+
+.PHONY : tree-sibling.i
+
+# target to preprocess a source file
+tree-sibling.cpp.i:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.i
+.PHONY : tree-sibling.cpp.i
+
+tree-sibling.s: tree-sibling.cpp.s
+
+.PHONY : tree-sibling.s
+
+# target to generate assembly for a file
+tree-sibling.cpp.s:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.s
+.PHONY : tree-sibling.cpp.s
+
+tree-traverse.o: tree-traverse.cpp.o
+
+.PHONY : tree-traverse.o
+
+# target to build an object file
+tree-traverse.cpp.o:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o
+.PHONY : tree-traverse.cpp.o
+
+tree-traverse.i: tree-traverse.cpp.i
+
+.PHONY : tree-traverse.i
+
+# target to preprocess a source file
+tree-traverse.cpp.i:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.i
+.PHONY : tree-traverse.cpp.i
+
+tree-traverse.s: tree-traverse.cpp.s
+
+.PHONY : tree-traverse.s
+
+# target to generate assembly for a file
+tree-traverse.cpp.s:
+	$(MAKE) -f CMakeFiles/Exercise_W6.dir/build.make CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.s
+.PHONY : tree-traverse.cpp.s
 
 # Help Target
 help:
@@ -189,9 +243,15 @@ help:
 	@echo "... Tree.o"
 	@echo "... Tree.i"
 	@echo "... Tree.s"
-	@echo "... tree-ADT.o"
-	@echo "... tree-ADT.i"
-	@echo "... tree-ADT.s"
+	@echo "... tree-child.o"
+	@echo "... tree-child.i"
+	@echo "... tree-child.s"
+	@echo "... tree-sibling.o"
+	@echo "... tree-sibling.i"
+	@echo "... tree-sibling.s"
+	@echo "... tree-traverse.o"
+	@echo "... tree-traverse.i"
+	@echo "... tree-traverse.s"
 .PHONY : help
 
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Exercise_W6.dir/Tree.cpp.o"
-  "CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o"
+  "CMakeFiles/Exercise_W6.dir/tree-child.cpp.o"
+  "CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o"
+  "CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o"
   "Exercise_W6"
   "Exercise_W6.pdb"
 )

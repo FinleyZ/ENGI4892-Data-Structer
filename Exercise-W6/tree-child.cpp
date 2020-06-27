@@ -5,6 +5,16 @@
 
 template <typename T>
 class Tree{
+private:
+    class Node{
+    public:
+        Node(T v) : value_(std::move(v)){}
+        Node():children_(NULL){}
+        T value_;
+        std::vector<std::unique_ptr<Tree>> children_;
+    };
+    std::unique_ptr<Node> root_;
+
 public:
 
     Tree(){
@@ -32,8 +42,6 @@ public:
     Tree& addChild(T value){
         std::unique_ptr<Node> node = std::make_unique<Node>(value);
         root_->children_.push_back(std::move(node));
-
-//        node->children_.push_back(std::move(node));
         return *this;
     }
 
@@ -44,25 +52,24 @@ public:
     Tree& addSubtree(Tree<T>&& subTree){
         root_->children_.push_back(std::move(subTree.root_));
         return this;
-
-//        std::unique_ptr<Tree> node = std::make_unique<Tree>;
-//        children_.push_back(std::move(node));
-//        return node;
     }
 
-private:
-    class Node{
-    public:
-        Node(T v) : value_(std::move(v)){}
-        T value_;
-        std::vector<std::unique_ptr<Tree>> children_;
-    };
-    std::unique_ptr<Node> root_;
+    void visit_preorder(Node* node){
+        if(!node) return;
+        node = node->children_.begin();
+        node = node->children_++;
+        for(auto i = node->children_--.begin(); i != node->children_.end(); i++){
+            visit_preorder(i);
+        }
+    }
+
+    void visit_postorder(Node* node){
+        if(!node) return;
+        node = node->children_.begin();
+        for(auto i = node->children_.begin(); i != node->children_.end(); i++){
+            visit_postorder(i);
+        }
+        node = node->children_++;
+    }
+
 };
-
-int main(){
-    Tree<std::string> tree;
-    tree.setRoot("Hello Word");
-
-    tree.setRoot("Hello Earth");
-}

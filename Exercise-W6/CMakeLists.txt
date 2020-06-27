@@ -3,4 +3,8 @@ project(Exercise_W6)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Exercise_W6 Tree.cpp tree-ADT.cpp)
+add_executable(Exercise_W6
+        tree-child.cpp
+        tree-sibling.cpp
+        tree-traverse.cpp
+        Tree.cpp)

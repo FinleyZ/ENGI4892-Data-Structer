@@ -3,5 +3,9 @@
 
 CMakeFiles/Exercise_W6.dir/Tree.cpp.o
  /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/Tree.cpp
-CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o
- /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-ADT.cpp
+CMakeFiles/Exercise_W6.dir/tree-child.cpp.o
+ /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-child.cpp
+CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o
+ /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-sibling.cpp
+CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o
+ /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-traverse.cpp

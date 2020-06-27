@@ -57,9 +57,48 @@ include CMakeFiles/Exercise_W6.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Exercise_W6.dir/flags.make
 
+CMakeFiles/Exercise_W6.dir/tree-child.cpp.o: CMakeFiles/Exercise_W6.dir/flags.make
+CMakeFiles/Exercise_W6.dir/tree-child.cpp.o: ../tree-child.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Exercise_W6.dir/tree-child.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Exercise_W6.dir/tree-child.cpp.o -c /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-child.cpp
+
+CMakeFiles/Exercise_W6.dir/tree-child.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercise_W6.dir/tree-child.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-child.cpp > CMakeFiles/Exercise_W6.dir/tree-child.cpp.i
+
+CMakeFiles/Exercise_W6.dir/tree-child.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercise_W6.dir/tree-child.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-child.cpp -o CMakeFiles/Exercise_W6.dir/tree-child.cpp.s
+
+CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o: CMakeFiles/Exercise_W6.dir/flags.make
+CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o: ../tree-sibling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o -c /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-sibling.cpp
+
+CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-sibling.cpp > CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.i
+
+CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-sibling.cpp -o CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.s
+
+CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o: CMakeFiles/Exercise_W6.dir/flags.make
+CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o: ../tree-traverse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o -c /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-traverse.cpp
+
+CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-traverse.cpp > CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.i
+
+CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-traverse.cpp -o CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.s
+
 CMakeFiles/Exercise_W6.dir/Tree.cpp.o: CMakeFiles/Exercise_W6.dir/flags.make
 CMakeFiles/Exercise_W6.dir/Tree.cpp.o: ../Tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Exercise_W6.dir/Tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Exercise_W6.dir/Tree.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Exercise_W6.dir/Tree.cpp.o -c /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/Tree.cpp
 
 CMakeFiles/Exercise_W6.dir/Tree.cpp.i: cmake_force
@@ -70,32 +109,23 @@ CMakeFiles/Exercise_W6.dir/Tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercise_W6.dir/Tree.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/Tree.cpp -o CMakeFiles/Exercise_W6.dir/Tree.cpp.s
 
-CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o: CMakeFiles/Exercise_W6.dir/flags.make
-CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o: ../tree-ADT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o -c /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-ADT.cpp
-
-CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-ADT.cpp > CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.i
-
-CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-ADT.cpp -o CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.s
-
 # Object files for target Exercise_W6
 Exercise_W6_OBJECTS = \
-"CMakeFiles/Exercise_W6.dir/Tree.cpp.o" \
-"CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o"
+"CMakeFiles/Exercise_W6.dir/tree-child.cpp.o" \
+"CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o" \
+"CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o" \
+"CMakeFiles/Exercise_W6.dir/Tree.cpp.o"
 
 # External object files for target Exercise_W6
 Exercise_W6_EXTERNAL_OBJECTS =
 
+Exercise_W6: CMakeFiles/Exercise_W6.dir/tree-child.cpp.o
+Exercise_W6: CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o
+Exercise_W6: CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o
 Exercise_W6: CMakeFiles/Exercise_W6.dir/Tree.cpp.o
-Exercise_W6: CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o
 Exercise_W6: CMakeFiles/Exercise_W6.dir/build.make
 Exercise_W6: CMakeFiles/Exercise_W6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Exercise_W6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Exercise_W6"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Exercise_W6.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

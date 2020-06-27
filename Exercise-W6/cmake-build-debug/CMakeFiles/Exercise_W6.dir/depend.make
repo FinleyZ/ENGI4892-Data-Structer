@@ -3,5 +3,9 @@
 
 CMakeFiles/Exercise_W6.dir/Tree.cpp.o: ../Tree.cpp
 
-CMakeFiles/Exercise_W6.dir/tree-ADT.cpp.o: ../tree-ADT.cpp
+CMakeFiles/Exercise_W6.dir/tree-child.cpp.o: ../tree-child.cpp
+
+CMakeFiles/Exercise_W6.dir/tree-sibling.cpp.o: ../tree-sibling.cpp
+
+CMakeFiles/Exercise_W6.dir/tree-traverse.cpp.o: ../tree-traverse.cpp
 

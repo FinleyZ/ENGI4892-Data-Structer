@@ -81,7 +81,13 @@
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/Tree.cpp">
 			<Option target="Exercise_W6"/>
 		</Unit>
-		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-ADT.cpp">
+		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-child.cpp">
+			<Option target="Exercise_W6"/>
+		</Unit>
+		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-sibling.cpp">
+			<Option target="Exercise_W6"/>
+		</Unit>
+		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/tree-traverse.cpp">
 			<Option target="Exercise_W6"/>
 		</Unit>
 		<Unit filename="/Users/hongfeizhang/Programming/ENGI-3894/Exercise-W6/CMakeLists.txt">
