@@ -132,7 +132,7 @@ public:
         head_ = new Node;
         head_-> prev_= nullptr;
         head_-> next_ = nullptr;
-//        head_-> value_ =0;
+//      head_-> value_ =0;      //error if i assign 0 to value_
         tail_ = head_;
         size_ = 0;
         Node* node = ListCopied.head_->next_;
@@ -310,17 +310,6 @@ public:
             delete p;
             --size_;
 
-//            it.Data->prev_->next_ = it.Data->next_;
-//            if(*it =tail_){
-//            }
-//            it.Data->next_->prev_ = it.Data->prev_;
-//            it.Data->prev_ = nullptr;
-//            it.Data->next_ = nullptr;
         }
     }
-
-//private:
-//    // Add whatever you need to add here
-//    T value_;
-
 };
