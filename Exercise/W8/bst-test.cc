@@ -25,11 +25,12 @@ int main()
 	bst.insert(4);
 	bst.insert(2);
 	bst.insert(7);
+	//bst.insert(6);
 
 	std::cout << "min value: " << bst.min() << "\n";
 	std::cout << "max value: " << bst.max() << "\n";
 
-	//bst.print(std::cout);
+	bst.print(std::cout);
 
 	return 0;
 }

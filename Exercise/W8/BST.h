@@ -18,6 +18,7 @@
 #include <cstddef>      // for definition of size_t
 #include <functional>   // std::function
 #include <memory>       // std::unique_ptr
+#include <iostream>
 
 template<typename T, typename Comparator = std::less<T>>
 class BinarySearchTree
@@ -73,6 +74,13 @@ public:
 		return root_->max().value();
 	}
 
+    const BinarySearchTree& print(std::ostream &out) const{
+	    if(root_){
+            root_->print(out);
+	    }
+        return *this;
+    }
+
 	/**
 	 * Remove a value (if it exists) from the tree.
 	 *
@@ -95,8 +103,34 @@ private:
 		const T& value() const { return element_; }
 
 		bool contains(const T&) const;
-		Node& min();
-		Node& max();
+		Node& min(){
+		    if (left_){
+                return left_->min();
+		    }
+
+		    return *this;
+		}
+
+		Node& max(){
+            if (right_){
+                return right_->min();
+            }
+
+            return *this;
+        }
+
+        const Node& print(std::ostream &out) const{
+		    if (left_){
+		        left_->print(out);
+		    }
+		    out << element_ << " x " << count_ << std::endl;
+
+            if (right_){
+                right_->print(out);
+            }
+            return *this;
+		}
+
 		T takeMin();
 		size_t maxDepth() const;
 
@@ -113,7 +147,20 @@ private:
 	 * @param   node       the root of the (sub-)tree being inserted into;
 	 *                     may be null if the (sub-)tree is empty
 	 */
-	void insert(T &&value, std::unique_ptr<Node> &node);
+	void insert(T &&value, std::unique_ptr<Node> &node){
+	    if (not node){
+	        node = std::make_unique<Node>(std::move(value));
+
+	    } else if (compare_(value, node->value())){
+	        insert(std::move(value), node->left_);
+
+	    } else if (compare_(node->value(), value)){
+            insert(std::move(value), node->right_);
+
+	    } else {
+	        node->count_++;
+        }
+	}
 
 	/**
 	 * Internal implementation of recursive removal.
