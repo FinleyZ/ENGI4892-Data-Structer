@@ -1,0 +1,18 @@
+Exercises for 20 Jul 2020 (Shortest Paths)
+
+1.Using the algorithm in the Shortest Paths video and the data from Friday’s exercises,
+  calculate (by hand) the distances from Portugal Cove to all other locations in the table.
+  - st.johns  14.2
+  	Paradise  12.5
+  	Goulds    28.5
+  	CBS       16.4
+  	Bay Bulls 43.8
+  	HOLYROOD  75.7
+  	Portugal  0
+
+ 2.Write out and analyze the asymptotic run-time complexity of the algorithm we saw for computing shortest
+ paths through graphs with unweighted edges in our introductory video on the topic, ( also presented here),
+  as well as the version that uses a work list to store "non-done" vertices. If necessary, you may find it
+  helpful to refer back to the analyses we did in class on Wednesday.
+
+  -O(n^3)

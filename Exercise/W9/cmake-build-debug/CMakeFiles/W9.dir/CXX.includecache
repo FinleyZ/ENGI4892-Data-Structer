@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise/W9/BST.h
+cassert
+-
+cstddef
+-
+functional
+-
+memory
+-
+iostream
+-
+
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise/W9/bst-test.cc
+BST.h
+/Users/hongfeizhang/Programming/ENGI-3894/Exercise/W9/BST.h
+iostream
+-
+

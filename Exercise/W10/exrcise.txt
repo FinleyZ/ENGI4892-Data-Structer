@@ -1,0 +1,13 @@
+Exercises for 15 Jul 2020 (Graph basics)
+
+	1.What is a DAG?
+
+		-directed acyclic graph.
+
+	2.Asymptotically speaking, how does the maximum number of edges |E|
+	in an undirected graph vary with the number of vertices |V|?
+
+		- |E| = |V|x|V|
+
+	3.Implement an adjacency matrix for a graph where the number of vertices is
+	  known in advance. Use the following class template:
